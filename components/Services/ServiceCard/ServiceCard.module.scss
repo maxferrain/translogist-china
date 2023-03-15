@@ -1,0 +1,134 @@
+@import '../../../styles/constants';
+
+.card {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.face1 {
+  text-align: center;
+  padding: 20px;
+  color: #073668;
+  transition: 0.5s;
+
+  h2 {
+    text-transform: uppercase;
+    margin-top: 140px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  a {
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #073668;
+    border: 2px solid #073668;
+    text-transform: capitalize;
+    transition: 0.3s;
+    border-radius: 16px;
+  }
+}
+
+
+.face2 {
+  z-index: 1;
+  h2 {
+    font-size: 33px;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    padding: 30px;
+
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    filter: brightness(80%);
+    z-index: 2;
+  }
+}
+
+.card:hover .face2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 50px;
+  left: 38%;
+  background-color: #fff;
+
+  h2 {
+    display: none;
+  }
+  img {
+    border-radius: 50%;
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    position: relative;
+    height: 300px;
+    width: 240px;
+  }
+
+  .face1 {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .face2 {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .card {
+    position: relative;
+    height: 300px;
+    width: 240px;
+  }
+
+  .face1 {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .face2 {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

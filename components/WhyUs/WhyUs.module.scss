@@ -1,0 +1,189 @@
+@import '../../styles/constants';
+
+.whyUsBlock {
+  background: white;
+  height: 600px;
+  padding-top: 80px;
+  -webkit-box-shadow: 0px 0px 18px -2px rgba(34, 60, 80, 0.22) inset;
+  -moz-box-shadow: 0px 0px 18px -2px rgba(34, 60, 80, 0.22) inset;
+  box-shadow: 0px 0px 18px -2px rgba(34, 60, 80, 0.22) inset;
+
+  .containerWhyUs {
+    display: flex;
+  }
+
+  .divider {
+    height: 100%;
+    margin: 30px;
+  }
+
+  .description {
+    width: 360px;
+    padding: 24px;
+    margin-right: 90px;
+    //background: #b9ddff;
+
+    h3 {
+      font-size: 37px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    p {
+      b {
+        color: #464646;
+      }
+
+      font-size: 16px;
+      color: $text-color-add-comment;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+  }
+
+  .reasons {
+    display: flex;
+
+    .card {
+      display: flex;
+      padding: 20px;
+
+      //background: #BAF8CF;
+      img {
+        width: 80px;
+        height: unset;
+        margin-right: 20px;
+        object-fit: scale-down;
+      }
+
+      div {
+        width: 190px;
+
+        h3 {
+          margin-bottom: 20px;
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          color: $text-color-add-comment;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 6000px) {
+
+}
+
+@media (max-width: 2560px) {
+
+}
+
+@media (max-width: 1550px) {
+
+}
+
+@media (max-width: 1200px) {
+  .whyUsBlock {
+    height: 700px;
+
+    .description {
+      margin-right: 14px;
+    }
+
+    .reasons {
+      .card {
+        padding: 10px;
+        div {
+          //width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .whyUsBlock {
+    .containerWhyUs{
+      flex-direction: column;
+    }
+
+    .description {
+      width: 600px;
+      margin-bottom: 20px;
+    }
+
+    .reasons {
+      justify-content: space-between;
+      .card {
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .whyUsBlock {
+    .containerWhyUs{
+      flex-direction: column;
+      width: 90vw;
+    }
+    .description {
+      width: 600px;
+      margin-bottom: 20px;
+
+    }
+
+    .divider {
+      display: none;
+    }
+
+    .horizontalDiv {
+      display: none;
+    }
+
+    .reasons {
+      justify-content: center;
+      margin: 0;
+      .card {
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .whyUsBlock {
+    height: auto;
+    .containerWhyUs{
+      flex-direction: column;
+      width: 85vw;
+    }
+    .description {
+      width: 300px;
+      margin: 0 0 20px;
+      padding: 0;
+    }
+
+    .divider {
+      display: none;
+    }
+
+    .horizontalDiv {
+      display: none;
+    }
+
+    .reasons {
+      display: inline;
+      margin-bottom: 20px;
+      .card {
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+
+}

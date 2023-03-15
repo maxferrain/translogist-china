@@ -9,12 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "antd": "^5.3.1",
+    "classnames": "^2.3.2",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.3.1",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-multi-carousel": "^2.8.2",
+    "sass": "^1.59.2",
     "typescript": "4.9.5"
   }
 }
