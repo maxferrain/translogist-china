@@ -25,7 +25,7 @@ export default function Home() {
                 <Features/>
                 <Containers/>
 
-                <Services/>
+                {/*<Services/>*/}
                 {/*<Questions/>*/}
                 {/*<Reviews/>*/}
                 {/*<ContactUs/>*/}
