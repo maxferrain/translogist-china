@@ -1,11 +1,12 @@
 import world from '../assets/images/img.png'
 import transport from '../assets/images/transport.png'
 import city from '../assets/images/city.png'
+import {StaticImageData} from 'next/image'
 export interface IServicePropsType {
     id?: number
     name: string
     description: string
-    img: string
+    img: StaticImageData
 }
 export const servicesData: Array<IServicePropsType> = [
     {
