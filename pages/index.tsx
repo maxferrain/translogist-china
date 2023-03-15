@@ -6,6 +6,7 @@ import WhyUs from '@/components/WhyUs/WhyUs'
 import Features from '@/components/Features/Features'
 import Containers from '@/components/Containers/Containers'
 import Services from '@/components/Services/Services'
+import Questions from '@/components/Questions/Questions'
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
                 <Containers/>
 
                 {/*<Services/>*/}
-                {/*<Questions/>*/}
+                <Questions/>
                 {/*<Reviews/>*/}
                 {/*<ContactUs/>*/}
                 <FloatButton.BackTop/>
