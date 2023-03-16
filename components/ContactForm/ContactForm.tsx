@@ -1,7 +1,7 @@
 import styles from './ContactForm.module.scss'
 import React, {useCallback, useState} from 'react'
 import {Button, Checkbox, Form, Input, message, Select} from 'antd'
-import TextArea from 'antd/es/input/TextArea'
+// import TextArea from 'antd/es/input/TextArea'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import {send} from 'emailjs-com'
@@ -10,6 +10,7 @@ import {send} from 'emailjs-com'
 import ru from 'react-phone-number-input/locale/ru'
 import {E164Number} from 'libphonenumber-js/types'
 import PolicyModal from '../modals/PolicyModal/PolicyModal'
+import TextArea from 'antd/lib/input/TextArea'
 
 const {contactsFormTitle, contactsForm, companyName, messageArea, submitButton, agreement} = styles
 
