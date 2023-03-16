@@ -8,6 +8,7 @@ import Containers from '@/components/Containers/Containers'
 import Services from '@/components/Services/Services'
 import Questions from '@/components/Questions/Questions'
 import Footer from '@/components/Footer/Footer'
+import ContactUs from '@/components/ContactUs/ContactUs'
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
                 {/*<Services/>*/}
                 <Questions/>
                 {/*<Reviews/>*/}
-                {/*<ContactUs/>*/}
+                <ContactUs/>
                 <FloatButton.BackTop/>
 
                 <Footer/>

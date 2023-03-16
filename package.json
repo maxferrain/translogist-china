@@ -21,6 +21,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-multi-carousel": "^2.8.2",
+    "react-phone-number-input": "^3.2.19",
     "sass": "^1.59.2",
     "typescript": "4.9.5"
   }

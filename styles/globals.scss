@@ -177,6 +177,13 @@ body {
   }
 }
 
+@media (max-width: 550px) {
+  .antInput {
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 425px) {
   .container {
     width: 425px;
