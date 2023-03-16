@@ -7,6 +7,7 @@ import Features from '@/components/Features/Features'
 import Containers from '@/components/Containers/Containers'
 import Services from '@/components/Services/Services'
 import Questions from '@/components/Questions/Questions'
+import Footer from '@/components/Footer/Footer'
 
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
                 {/*<ContactUs/>*/}
                 <FloatButton.BackTop/>
 
-                {/*<Footer/>*/}
+                <Footer/>
             </main>
         </>
     )

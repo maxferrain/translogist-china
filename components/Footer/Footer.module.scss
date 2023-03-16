@@ -1,0 +1,137 @@
+@import '../../styles/constants';
+
+.footer {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 80px 0 20px;
+
+  div {
+    max-width: 100vw;
+    p {
+      margin-left: 12px;
+    }
+  }
+
+  p {
+    color: $text-color-add-comment;
+    margin-top: 40px;
+  }
+
+  .divider {
+    background: $color-gray-multiselect-bg;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+
+
+    .logoImg {
+      height: 30px;
+      width: unset;
+    }
+
+    svg {
+      height: 20px;
+      width: 50px;
+    }
+  }
+
+  .mainHeaderInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100vw;
+
+    .contacts {
+      max-width: 100px;
+
+      h4 {
+        font-size: $font-size-large;
+        font-weight: $font-weight-bold;
+        margin-left: 16px;
+      }
+
+      a {
+        margin-top: 12px;
+      }
+    }
+
+    .address {
+      max-width: 300px;
+
+      h4 {
+        font-size: $font-size-large;
+        font-weight: $font-weight-bold;
+      }
+
+      p {
+        margin: 24px 0;
+        color: $text-color-add-comment;
+        font-weight: 600;
+      }
+
+      .showMap {
+        text-decoration: none;
+        display: flex;
+        gap: 12px;
+        color: $text-color-gray;
+
+        svg {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      a {
+        color: $text-color-gray;
+
+        & :hover {
+          color: $text-color-add-comment;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1140px) {
+  .address {
+    width: 180px;
+    margin-left: 14px;
+  }
+
+  .mainHeaderInfo {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .address {
+    width: 180px;
+    margin-left: 14px;
+  }
+
+  .mainHeaderInfo {
+    width: 700px;
+    flex-direction: column;
+
+    .menu {
+      margin-top: 16px;
+    }
+
+    .contacts {
+      margin-top: 16px;
+    }
+  }
+}
