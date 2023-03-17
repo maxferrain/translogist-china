@@ -13,7 +13,6 @@ const Containers = () => {
 
     const toggleAllContainers = () => toggleShowing(s => !s)
 
-    console.log(isAllContainersShowing, containersData)
     return (
         <div className={containersBlock} id="containers">
             <h2 className={title}>Типы контейнеров</h2>

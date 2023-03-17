@@ -1,7 +1,6 @@
 import styles from './ContactForm.module.scss'
 import React, {useCallback, useState} from 'react'
 import {Button, Checkbox, Form, Input, message, Select} from 'antd'
-// import TextArea from 'antd/es/input/TextArea'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import {send} from 'emailjs-com'

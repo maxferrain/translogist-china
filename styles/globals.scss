@@ -159,11 +159,18 @@ body {
 
 }
 
+@media (max-width: 1315px) {
+  .card-container {
+    display: none;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 1000px;
   }
 }
+
 
 @media (max-width: 1024px) {
   .container {
