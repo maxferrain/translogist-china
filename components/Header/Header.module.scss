@@ -73,8 +73,13 @@
 
 }
 
-@media (max-width: 850px) {
+
+
+@media (max-width: 870px) {
   .navbar {
+    display: none;
+  }
+  .features {
     display: none;
   }
 

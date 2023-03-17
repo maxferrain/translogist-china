@@ -1,12 +1,14 @@
 import logo from '../../assets/icons/translogo.png'
 import styles from './Header.module.scss'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Anchor, Button, Menu, MenuProps, Space} from 'antd'
 import {AppstoreOutlined} from '@ant-design/icons'
 import Image from 'next/image'
 import Link from 'next/link'
+import {any, number} from 'prop-types'
+import {ItemType} from 'antd/es/menu/hooks/useItems'
 
-const {header, phoneButton, navbar, navMobile, logoImg} = styles
+const {header, phoneButton, navbar, navMobile, logoImg, features} = styles
 
 type MenuItem = Required<MenuProps>['items'][number];
 function getItem(
@@ -25,17 +27,16 @@ function getItem(
     } as MenuItem;
 }
 
-const items: MenuProps['items'] = [
-
-    getItem('', 'sub2', <AppstoreOutlined />, [
-        getItem(<Button href="#features" type='text'>Услуги</Button>, '#features'),
-        getItem(<Button href="#containers" type='text'>Контейнеры</Button>, '#containers'),
-        getItem(<Button href="#services" type='text'>Преимущества</Button>, '#services'),
-        getItem(<Button href="#qa" type='text'>Q&A</Button>, '#qa'),
-        getItem(<Button href="#reviews" type='text'>Отзывы</Button>, '#reviews'),
-    ]),
-];
 const Header = () => {
+
+    const items: MenuProps['items'] = [
+        getItem('', 'sub2', <AppstoreOutlined />, [
+            getItem(<Button href="#features" type='text'>Услуги</Button>, '#features'),
+            getItem(<Button href="#containers" type='text'>Контейнеры</Button>, '#containers'),
+            getItem(<Button href="#qa" type='text'>Q&A</Button>, '#qa'),
+            getItem(<Button href="#reviews" type='text'>Отзывы</Button>, '#reviews'),
+        ])
+    ]
     return (
         <div className={header}>
             {/*<Link href="/">*/}
