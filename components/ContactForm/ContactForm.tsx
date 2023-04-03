@@ -58,7 +58,7 @@ const ContactForm = () => {
 
         openMessage()
         // @ts-ignore
-        send('service_xoi7yzm', 'template_ynlmsas', values, 'bAOkGC6KWuAmTjFxo')
+        send('service_vuk8q6n', 'template_ynlmsas', values, 'bAOkGC6KWuAmTjFxo')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text)
                 form.resetFields()

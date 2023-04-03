@@ -10,6 +10,7 @@ import Questions from '@/components/Questions/Questions'
 import Footer from '@/components/Footer/Footer'
 import ContactUs from '@/components/ContactUs/ContactUs'
 import Reviews from '@/components/Reviews/Reviews'
+import Prices from '@/components/Prices/Prices'
 
 
 export default function Home() {
@@ -28,8 +29,8 @@ export default function Home() {
                 <WhyUs/>
                 <Features/>
                 <Containers/>
-
                 <Services/>
+                <Prices/>
                 <Questions/>
                 <Reviews/>
                 <ContactUs/>
