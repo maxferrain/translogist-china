@@ -1,3 +1,9 @@
+export const ports: DataType[] = [
+    {key: 0, name: 'VOSTOCHNY (Восточный)'},
+    {key: 1, name: 'VLADIVOSTOK (ВМТП)'},
+    {key: 2, name: 'FISH PORT (ВМКТ)'},
+]
+
 export interface ExpandedDataType {
     key: number
     city: string
@@ -18,6 +24,14 @@ export interface ExpandedDataType {
     OVP40?: string
     GFL40?: string
     SITC40?: string
+    RusTransGroup?: string
+    SCO?: string
+    HUB?: string
+    DVLK?: string
+    RusTransGroup40?: string
+    SCO40?: string
+    HUB40?: string
+    DVLK40?: string
 }
 
 export interface DataType {
@@ -88,7 +102,7 @@ export const pricesVostochniy: ExpandedDataType[] = [
         Sinokor40: '$7 160',
         Fesco40: '$7 160',
         MAS: '$5 410',
-        Sasco40:'',
+        Sasco40: '',
     },
     {
         key: 4,
@@ -101,7 +115,7 @@ export const pricesVostochniy: ExpandedDataType[] = [
         Sinokor40: '$7 160',
         Fesco40: '$7 560',
         MAS: '$5 410',
-        Sasco40:'',
+        Sasco40: '',
     },
     {
         key: 5,
@@ -114,7 +128,7 @@ export const pricesVostochniy: ExpandedDataType[] = [
         Sinokor40: '',
         Fesco40: '$7 060',
         MAS: '$5 310',
-        Sasco40:'',
+        Sasco40: '',
     },
     {
         key: 6,
@@ -127,7 +141,7 @@ export const pricesVostochniy: ExpandedDataType[] = [
         Sinokor40: '$7 160',
         Fesco40: '$6 960',
         MAS: '$5 210',
-        Sasco40:'',
+        Sasco40: '',
     },
     {
         key: 7,
@@ -494,8 +508,215 @@ export const pricesVladivostok: ExpandedDataType[] = [
     },
 ]
 
-export const ports: DataType[] = [
-    {key: 0, name: 'VOSTOCHNY (Восточный)'},
-    {key: 1, name: 'VLADIVOSTOK (ВМТП)'},
-    {key: 2, name: 'FISH PORT (ВМКТ)'},
+export const columnsFishport = [
+    {title: 'Порт отправления', dataIndex: 'city', key: 'city'},
+    {title: '20\'DC/RusTransGroup', dataIndex: 'RusTransGroup', key: 'RusTransGroup'},
+    {title: '20\'DC/Sinokor', dataIndex: 'Sinokor', key: 'Sinokor'},
+    {title: '20\'DC/SCO', dataIndex: 'SCO', key: 'SCO'},
+    // {title: '20\'DC/HUB', dataIndex: 'HUB', key: 'HUB'},
+    {title: '20\'DC/ДВЛК', dataIndex: 'DVLK', key: 'DVLK'},
+    // {title: '20\'DC/Sasco', dataIndex: 'Sasco', key: 'Sasco'},
+
+    {title: '40\'HC/RusTransGroup', dataIndex: 'RusTransGroup40', key: 'RusTransGroup40'},
+    {title: '40\'HC/Sinokor', dataIndex: 'Sinokor40', key: 'Sinokor40'},
+    {title: '40\'HC/SCO', dataIndex: 'SCO40', key: 'SCO40'},
+    // {title: '40\'HC/HUB', dataIndex: 'HUB40', key: 'HUB40'},
+    {title: '40\'HC/ДВЛК', dataIndex: 'DVLK40', key: 'DVLK40'},
+    // {title: '40\'HC/Sasco', dataIndex: 'Sasco40', key: 'Sasco40'},
+
+]
+
+export const pricesFishport: ExpandedDataType[] = [
+    {
+        key: 0,
+        city: 'Shanghai',
+        RusTransGroup: '$3 610',
+        Sinokor: '$5 000',
+        SCO: '$3 250',
+        DVLK: '',
+        RusTransGroup40: '$5 110',
+        Sinokor40: '$7 160',
+        SCO40: '$4 600',
+        DVLK40: '',
+    },
+    {
+        key: 1,
+        city: 'Ningbo',
+        RusTransGroup: '$3 450',
+        Sinokor: '$5 000',
+        SCO: '$3 250',
+        DVLK: '$3 310',
+        RusTransGroup40: '$4 950',
+        Sinokor40: '$7 160',
+        SCO40: '$4 600',
+        DVLK40: '$4 610',
+    },
+    {
+        key: 2,
+        city: 'Qingdao',
+        RusTransGroup: '$3 550',
+        Sinokor: '$5 000',
+        SCO: '',
+        DVLK: '$3 430',
+        RusTransGroup40: '$5 100',
+        Sinokor40: '$7 160',
+        SCO40: '',
+        DVLK40: '$4 785',
+    },
+    {
+        key: 3,
+        city: 'Xiamen',
+        RusTransGroup: '$3 810',
+        Sinokor: '$5 000',
+        SCO: '$3 560',
+        DVLK: '',
+        RusTransGroup40: '$5 600',
+        Sinokor40: '$7 160',
+        SCO40: '$5 300',
+        DVLK40: '',
+    },
+    {
+        key: 4,
+        city: 'Huangpu',
+        RusTransGroup: '',
+        Sinokor: '$5 000',
+        SCO: '$3 800',
+        DVLK: '',
+        RusTransGroup40: '',
+        Sinokor40: '$7 160',
+        SCO40: '$5 410',
+        DVLK40: '',
+    },
+    {
+        key: 5,
+        city: 'Yantian',
+        RusTransGroup: '$4 110',
+        Sinokor: '',
+        SCO: '$3 760',
+        DVLK: '',
+        RusTransGroup40: '$6 050',
+        Sinokor40: '',
+        SCO40: '$5 600',
+        DVLK40: '',
+    },
+    {
+        key: 6,
+        city: 'Dalian',
+        RusTransGroup: '$4 010',
+        Sinokor: '$5 000',
+        SCO: '$3 660',
+        DVLK: '',
+        RusTransGroup40: '$6 060',
+        Sinokor40: '$7 160',
+        SCO40: '$5 410',
+        DVLK40: '',
+    },
+    {
+        key: 7,
+        city: 'Xingang',
+        RusTransGroup: '$3 850',
+        Sinokor: '$5 000',
+        SCO: '$3 660',
+        DVLK: '',
+        RusTransGroup40: '$5 550',
+        Sinokor40: '$7 160',
+        SCO40: '$5 260',
+        DVLK40: '',
+    },
+    // {
+    //     key: 8,
+    //     city: 'Busan',
+    //     RusTransGroup: '',
+    //     Sinokor: '$5 000',
+    //     SCO: '',
+    //     DVLK: '',
+    //     RusTransGroup40: '',
+    //     Sinokor40: '',
+    //     SCO40: '',
+    //     DVLK40: '',
+    // },
+    {
+        key: 9,
+        city: 'Shantou',
+        RusTransGroup: '$4 190',
+        Sinokor: '$5 000',
+        SCO: '$3 860',
+        DVLK: '',
+        RusTransGroup40: '$6 040',
+        Sinokor40: '$7 160',
+        SCO40: '$5 510',
+        DVLK40: '',
+    },
+    {
+        key: 10,
+        city: 'Shekou',
+        RusTransGroup: '$4 299',
+        Sinokor: '$5 000',
+        SCO: '$3 760',
+        DVLK: '',
+        RusTransGroup40: '$6 050',
+        Sinokor40: '$7 160',
+        SCO40: '$5 410',
+        DVLK40: '',
+    },
+    {
+        key: 11,
+        city: 'Taicang',
+        RusTransGroup: '$3 900',
+        Sinokor: '',
+        SCO: '',
+        DVLK: '$3 710',
+        RusTransGroup40: '$5 410',
+        Sinokor40: '',
+        SCO40: '',
+        DVLK40: '$4 610',
+    },
+    // {
+    //     key: 12,
+    //     city: 'Zhapu',
+    //     RusTransGroup: '$3 660',
+    //     Sinokor: '',
+    //     SCO: '',
+    //     DVLK: '',
+    //     RusTransGroup40: '$5 210',
+    //     Sinokor40: '',
+    //     SCO40: '',
+    //     DVLK40: '',
+    // },
+    // {
+    //     key: 13,
+    //     city: 'Humen',
+    //     RusTransGroup: '',
+    //     Sinokor: '',
+    //     SCO: '',
+    //     DVLK: '',
+    //     RusTransGroup40: '',
+    //     Sinokor40: '',
+    //     SCO40: '',
+    //     DVLK40: '',
+    // },
+    {
+        key: 14,
+        city: 'Nansha',
+        RusTransGroup: '$4 310',
+        Sinokor: '$5 200',
+        SCO: '$3 760',
+        DVLK: '$4 310',
+        RusTransGroup40: '$6 210',
+        Sinokor40: '$7 360',
+        SCO40: '$5 410',
+        DVLK40: '$5 710',
+    },
+    {
+        key: 15,
+        city: 'Rizhao',
+        RusTransGroup: '',
+        Sinokor: '',
+        SCO: '$3 360',
+        DVLK: '$3 310',
+        RusTransGroup40: '',
+        Sinokor40: '',
+        SCO40: '$4 560',
+        DVLK40: '$4 610',
+    },
 ]

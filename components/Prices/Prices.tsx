@@ -3,10 +3,11 @@ import cn from 'classnames'
 import {Table, TableColumnsType} from 'antd'
 import React from 'react'
 import {
+    columnsFishport,
     columnsVladivostok,
     columnsVostochniy,
     DataType,
-    ports,
+    ports, pricesFishport,
     pricesVladivostok,
     pricesVostochniy
 } from '@/infoData/pricesData'
@@ -47,6 +48,10 @@ const tablesData = {
     [ports[1].name]: {
         cols: columnsVladivostok,
         dataSource: pricesVladivostok
+    },
+    [ports[2].name]: {
+        cols: columnsFishport,
+        dataSource: pricesFishport
     }
 }
 
